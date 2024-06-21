@@ -1,0 +1,43 @@
+html, body {
+  font-family: sans-serif;
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%; /* Ensure body takes the full height of the viewport */
+}
+
+div {
+  /* sizing and position */
+  width: 300px;
+  height: 150px;
+  margin: auto;
+  /* text */
+  font-size: 18px;
+  text-align: center;
+  color: white; /* Choose a text color which contrasts well with its background */
+  text-shadow: 1px 1px 1px black;
+  /* border */
+  border-radius: 10px;
+  border: 1px solid #990000;
+  /* background */
+  background-color: red;
+  background-image: linear-gradient(
+    to top left,
+    rgba(0, 0, 0, 0.2),
+    rgba(0, 0, 0, 0.2) 30%,
+    rgba(0, 0, 0, 0)
+  );
+  /* other effects */
+  box-shadow: inset 2px 2px 3px rgba(255, 255, 255, 0.6),
+    inset -2px -2px 3px rgba(0, 0, 0, 0.6), 2px 2px 5px black;
+  
+  /* Flexbox for centering text */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
