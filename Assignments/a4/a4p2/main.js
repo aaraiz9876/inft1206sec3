@@ -4,7 +4,7 @@ const thumbBar = document.querySelector('.thumb-bar');
 const btn = document.querySelector('button');
 const overlay = document.querySelector('.overlay');
 
-/* Declaring the array of image filenames with new paths */
+
 
 const images = ['../a4p2/pic1.jpg', '../a4p2/pic2.jpg', '../a4p2/pic3.jpg', '../a4p2/pic4.jpg', '../a4p2/pic5.jpg'];
 const alts = {
@@ -15,11 +15,10 @@ const alts = {
   '../a4p2/pic5.jpg' : 'Large moth on a leaf'
 }
 
-/* Looping through images */
 
 for (const image of images) {
   const newImage = document.createElement('img');
-  newImage.setAttribute('src', image); // Path is already complete
+  newImage.setAttribute('src', image); 
   newImage.setAttribute('alt', alts[image]);
   thumbBar.appendChild(newImage);
   newImage.addEventListener('click', e => {
@@ -28,7 +27,7 @@ for (const image of images) {
   });
 }
 
-/* Wiring up the Darken/Lighten button */
+
 
 btn.addEventListener('click', () => {
   const btnClass = btn.getAttribute('class');
